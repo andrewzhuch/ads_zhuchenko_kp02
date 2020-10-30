@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "/Users/dron/.dotnet/store/|arch|/|tfm|",
-      "/Users/dron/.nuget/packages"
-    ]
-  }
-}

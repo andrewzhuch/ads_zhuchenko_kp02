@@ -1,0 +1,12 @@
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/bin/Debug/netcoreapp3.1/task2.deps.json
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/bin/Debug/netcoreapp3.1/task2.runtimeconfig.json
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/bin/Debug/netcoreapp3.1/task2.runtimeconfig.dev.json
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/bin/Debug/netcoreapp3.1/task2.dll
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/bin/Debug/netcoreapp3.1/task2.pdb
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/obj/Debug/netcoreapp3.1/task2.csprojAssemblyReference.cache
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/obj/Debug/netcoreapp3.1/task2.AssemblyInfoInputs.cache
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/obj/Debug/netcoreapp3.1/task2.AssemblyInfo.cs
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/obj/Debug/netcoreapp3.1/task2.csproj.CoreCompileInputs.cache
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/obj/Debug/netcoreapp3.1/task2.dll
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/obj/Debug/netcoreapp3.1/task2.pdb
+/Users/dron/KPI/ACД/labs/ads_zhuchenko_kp02/lab1/task2/obj/Debug/netcoreapp3.1/task2.genruntimeconfig.cache

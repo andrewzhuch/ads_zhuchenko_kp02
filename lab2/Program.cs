@@ -235,6 +235,7 @@ namespace lab2
             {
                 Write("{0} ", traverseOfMatrix[i]);
             }
+            WriteLine();
         }
     }
 }

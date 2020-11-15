@@ -94,9 +94,12 @@ namespace lab2
             int rawIndex = 0; // index of the current cell
             int columnIndex = M - 1; //index of the current cell
             int currentCell = 0; //number of current cell
+            //general idea for "zigzag" traversing:
+            //we divide the traversing into two parts: diagonals and lines which are parallel to borders
+            //fisrt we make a step, than check out our location, and depending on result we add cell to array or go to another part of code
             while(currentCell < (N * M) / 2)
             {
-                if(columnIndex == M - 1 && rawIndex != N / 2 - 1)// for right border
+                if(columnIndex == M - 1 && rawIndex != N / 2 - 1)//for right border
                 {
                     traverseOfMatrix[currentCell] = matrix[rawIndex, columnIndex];
                     currentCell++;
@@ -117,7 +120,7 @@ namespace lab2
                         currentCell++;
                     }
                 }
-                else if(rawIndex == 0 && columnIndex != M - 1 && columnIndex != 0) // for top border
+                else if(rawIndex == 0 && columnIndex != M - 1 && columnIndex != 0) //for top border
                 {
                     traverseOfMatrix[currentCell] = matrix[rawIndex, columnIndex];
                     currentCell++;
@@ -138,7 +141,8 @@ namespace lab2
                         columnIndex++;
                     }
                 }
-                else if(rawIndex == N / 2 - 1 && columnIndex != 0) // for bottom border
+                else if(rawIndex == N / 2 - 1 && columnIndex != 0) //for bottom border, 
+                //in this case we may come to the last cell and should go another traversing, because of that so many breaks
                 {
                     traverseOfMatrix[currentCell] = matrix[rawIndex, columnIndex];
                     currentCell++;
@@ -171,7 +175,8 @@ namespace lab2
                         rawIndex--;
                     }
                 }
-                else if(columnIndex == 0) // for left border
+                else if(columnIndex == 0) //for left border
+                //as well as in previouse case
                 {
                     traverseOfMatrix[currentCell] = matrix[rawIndex, columnIndex];
                     currentCell++;
@@ -206,18 +211,18 @@ namespace lab2
 
                 }
             }
-            int counter1 = 2; //helps to determine do we need to go down or to go up in "snake" traverse
+            int goUpOrDown = 2; //helps to determine do we need to go down or to go up in "snake" traverse
             int indexForTraverseOfMatrix = (N * M) / 2; //index of number added to traverseOfMatrix
             for(int j = 0; j < M; j++)
             {
-                if(counter1 % 2 == 0) //if we need to go up
+                if(goUpOrDown % 2 == 0) //if we need to go up
                 {
                     for(int i = N / 2; i < N; i ++)
                     {
                         traverseOfMatrix[indexForTraverseOfMatrix] = matrix[i, j];
                         indexForTraverseOfMatrix++;
                     }
-                    counter1 += 1;
+                    goUpOrDown += 1;
                 }
                 else // if we need to go down
                 {
@@ -227,7 +232,7 @@ namespace lab2
                         indexForTraverseOfMatrix++;
 
                     }
-                    counter1 += 1;
+                    goUpOrDown += 1;
                 }
 
             }

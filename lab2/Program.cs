@@ -38,7 +38,7 @@ namespace lab2
         }
         static void traversalMatrix(int N, int M, double k)
         {
-            WriteLine("input 1 if you want to traverse a random matrix, input 2 if you want to choose the test case");
+            WriteLine("input 1 if you want to traverse a random matrix, input another int if you want to choose the test case");
             int determinantOfChoice = int.Parse(ReadLine()); // determing what kind of matrix user chose
             int[,] matrix = new int[N, M];
             if(determinantOfChoice == 1)
@@ -222,7 +222,7 @@ namespace lab2
                         traverseOfMatrix[indexForTraverseOfMatrix] = matrix[i, j];
                         indexForTraverseOfMatrix++;
                     }
-                    goUpOrDown += 1;
+                    goUpOrDown ++;
                 }
                 else // if we need to go down
                 {
@@ -232,7 +232,7 @@ namespace lab2
                         indexForTraverseOfMatrix++;
 
                     }
-                    goUpOrDown += 1;
+                    goUpOrDown ++;
                 }
 
             }
